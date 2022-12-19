@@ -6,6 +6,9 @@ console.log("Lifting weights repetition 1 🏋️‍♂️");
 
 let cup = "🏋️‍♂️";
 
-for (let rep = 1; rep <= 3; rep++) {
+for (let rep = 1; rep <= 5; rep++) {
   console.log(`Lifting weights repetitions ${rep} ${(cup += "🏋️‍♂️")} `);
+}
+for (let io=1; io<=5; io++){
+  console.log(`I'm a ${io} hero!`);
 }
