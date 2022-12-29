@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -5,12 +7,12 @@
 }
 
 html {
-  font-size: 62.5%;
   box-sizing: border-box;
+  font-size: 62.5%;
 }
 
 body {
-  font-family: sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: #333;
   line-height: 1.5;
   height: 100vh;
@@ -21,10 +23,12 @@ body {
   background: linear-gradient(to top left, #28b487, #7dd56f);
 }
 
+
 .show-modal {
   font-size: 2rem;
   font-weight: 600;
   padding: 1.75rem 3.5rem;
+  text-transform: capitalize;
   margin: 5rem 2rem;
   border: none;
   background-color: #fff;
@@ -53,24 +57,20 @@ p {
   font-size: 1.8rem;
 }
 
-/* -------------------------- */
-/* CLASSES TO MAKE MODAL WORK */
-.hidden {
-  display: none;
-}
+/* Classes to make modal work */
 
 .modal {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%,-50%);
   width: 70%;
 
   background-color: white;
   padding: 6rem;
   border-radius: 5px;
   box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
-  z-index: 10;
+  z-index: 1;
 }
 
 .overlay {
@@ -81,5 +81,9 @@ p {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(3px);
-  z-index: 5;
+  z-index: 0;
+}
+
+.hidden {
+  display: none;
 }
